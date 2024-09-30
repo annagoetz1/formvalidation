@@ -13,3 +13,14 @@ if (nameInput.value.trim() === "") {
 } else {
   nameError.style.display = 'none'; // Hide error if the name is valid
 }
+
+// Email validation
+const emailInput = document.getElementById('email');
+const emailError = document.getElementById('emailError');
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+if (!emailRegex.test(emailInput.value)) {
+  emailError.style.display = 'block';
+  valid = false;
+} else {
+  emailError.style.display = 'none';
+}
