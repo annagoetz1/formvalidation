@@ -6,22 +6,21 @@
 </head>
 <body>
 
-<form id="myForm" novalidate>
-    <form action="submit" method="post">
-    <label for="email">Please fill out your email address!</label>
+  <form id="myForm" novalidate>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <span class="error" id="nameError">Please enter your name.</span>
+  
+    <label for="email">Email:</label>
     <input type="email" id="email" name="email" required>
-    <button>Submit</button> <br><br>
-    
-    <label for="zipcode">Please fill out your current zip code."</label>
-    <input type="text" id="zip" name="zip" required><br><br>
-    
-    <label for="country">Please fill out your current country."</label>
-    <input type="text" id="country" name="country"required>
-    <button> Submit</button> <br><br>
-      
-      <label for="password"> Please enter a password.</label>
-      <input type="password" id="password" name="password" required> <br> <br>
-      <label for="confirm_password"> Confirm your password.</label>
-      <input type="password" id="confirm_password" name="confirm_password" required <br><br>
+    <span class="error" id="emailError">Please enter a valid email address.</span>
+  
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <span class="error" id="passwordError">Please enter a password.</span>
+  
+    <button type="submit">Submit</button>
+    <div id="highFiveMessage"></div>
   </form>
+  
 </body>
