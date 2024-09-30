@@ -1,0 +1,8 @@
+# Ignore node_modules
+node_modules/
+
+# Ignore Webpack's build directory
+dist/
+
+# Ignore log files
+*.log
