@@ -34,3 +34,8 @@ if (!emailRegex.test(emailInput.value)) {
  } else {
    passwordError.style.display = 'none';
  }
+//if form is valid, give a high five
+ if (valid) {
+  document.getElementById('highFiveMessage').innerText = 'High Five! 🙌';
+}
+});
