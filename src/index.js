@@ -24,3 +24,13 @@ if (!emailRegex.test(emailInput.value)) {
 } else {
   emailError.style.display = 'none';
 }
+
+ // Password validation
+ const passwordInput = document.getElementById('password');
+ const passwordError = document.getElementById('passwordError');
+ if (passwordInput.value.trim() === "") {
+   passwordError.style.display = 'block';
+   valid = false;
+ } else {
+   passwordError.style.display = 'none';
+ }
