@@ -1,0 +1,26 @@
+{
+  "name": "formvalidation",
+  "version": "1.0.0",
+  "description": "A project for validating forms using JavaScript and Webpack.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack serve --open --mode development"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.x.x",
+    "@babel/preset-env": "^7.x.x",
+    "babel-loader": "^9.x.x",
+    "css-loader": "^6.x.x",
+    "html-webpack-plugin": "^5.x.x",
+    "style-loader": "^3.x.x",
+    "webpack": "^5.x.x",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.x.x"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
