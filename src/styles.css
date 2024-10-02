@@ -1,0 +1,10 @@
+.error {
+    color: red;
+    display: none; /* Initially hide error messages */
+  }
+  
+  #highFiveMessage {
+    margin-top: 10px;
+    color: green;
+    font-size: 18px;
+  }
